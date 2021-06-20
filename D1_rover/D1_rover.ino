@@ -14,7 +14,7 @@ void setup() {
   //Initialize Server
   WiFi.mode(WIFI_STA);
   WiFi.setAutoReconnect(true);
-  WiFi.begin("OSCAR-WIFI", "1088304958");
+  WiFi.begin("MichosMalucos", "delunoalnueve");
   while (WiFi.status() != WL_CONNECTED){
   blinky(250);
   }
@@ -145,13 +145,13 @@ void loop() {
   client.println("<meta charset=\"UTF-8\"/>");
   
   client.println("<h1>");
-  client.print("Esplorveturilo");
+  client.print("Oz Rover");
   client.println("<br>");
-  client.println("<a href=\"/action=forward\">antaŭen</a><br>");
-  client.println("<a href=\"/action=backward\">malantaŭen</a><br>");
-  client.println("<a href=\"/action=right\">dekstre</a><br>");
-  client.println("<a href=\"/action=left\">maldekstre</a><br>");
-  client.println("<a href=\"/action=stop\">halti</a><br>");
+  client.println("<a href=\"/action=forward\">foward</a><br>");
+  client.println("<a href=\"/action=backward\">backward</a><br>");
+  client.println("<a href=\"/action=right\">right</a><br>");
+  client.println("<a href=\"/action=left\">left</a><br>");
+  client.println("<a href=\"/action=stop\">stop</a><br>");
   client.println("</h1>");
   client.println("</html>");
 
